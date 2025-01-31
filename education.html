@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management Education</title>
+    <link rel="stylesheet" href="education.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Waste Management Education</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#recycling">Recycling</a></li>
+                    <li><a href="#composting">Composting</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="container">
+            <h2>Learn About Waste Management</h2>
+            <p>Understand the importance of proper waste disposal, recycling, and composting.</p>
+        </div>
+    </section>
+
+    <!-- Educational Content: Recycling -->
+    <section id="recycling" class="content-section">
+        <div class="container">
+            <h2>Recycling</h2>
+            <p>Recycling is the process of converting waste into reusable material. This helps conserve resources and reduce landfill waste.</p>
+            <h3>Commonly Recycled Materials</h3>
+            <ul>
+                <li>Paper & Cardboard</li>
+                <li>Plastic Bottles & Containers</li>
+                <li>Glass Bottles & Jars</li>
+                <li>Metal Cans (aluminum, tin, steel)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Educational Content: Composting -->
+    <section id="composting" class="content-section">
+        <div class="container">
+            <h2>Composting</h2>
+            <p>Composting is the process of breaking down organic waste into nutrient-rich soil. It helps reduce methane emissions and creates valuable fertilizer.</p>
+            <h3>Compostable Materials</h3>
+            <ul>
+            <li>Fruit & Vegetable Scraps</li>
+            <li>Eggshells</li>
+            <li>Coffee Grounds</li>
+            <li>Yard Waste (leaves, grass clippings)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Interactive Quiz Section -->
+    <section id="quiz" class="quiz-section">
+        <div class="container">
+            <h2>Test Your Knowledge</h2>
+            <p>Take this short quiz to test your knowledge about waste management.</p>
+            <div id="quiz-container">
+                <form id="quizForm">
+                    <label>1. Which material can be recycled?</label>
+                    <select id="q1">
+                        <option value="0">Plastic Bags</option>
+                        <option value="1">Glass Bottles</option>
+                        <option value="0">Styrofoam</option>
+                    </select>
+
+                    <label>2. What is composting?</label>
+                    <select id="q2">
+                        <option value="1">Decomposing organic material into nutrient-rich soil</option>
+                        <option value="0">Burning waste to generate energy</option>
+                        <option value="0">Dumping waste into oceans</option>
+                    </select>
+
+                    <label>3. Which of these cannot be composted?</label>
+                    <select id="q3">
+                        <option value="0">Fruit Scraps</option>
+                        <option value="0">Coffee Grounds</option>
+                        <option value="1">Plastic Containers</option>
+                    </select>
+
+                    <button type="button" onclick="calculateScore()">Submit</button>
+                </form>
+                <div id="resultDisplay">
+                    <h3>Your Score: <span id="score">0</span>/3</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <div class="container">
+            <h3>Contact Us</h3>
+            <p>Email: eco-link@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="education.js"></script>
+</body>
+</html>

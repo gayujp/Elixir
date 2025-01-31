@@ -1,0 +1,111 @@
+/* Basic reset and font styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styling */
+header {
+    background-color: #28a745;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Banner Section */
+.banner {
+    background: url('banner.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.banner h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 24px;
+}
+
+/* Waste Sections */
+.waste-section {
+    padding: 40px 0;
+}
+
+.waste-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #28a745;
+}
+
+.waste-section p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.waste-section ul {
+    list-style: disc inside;
+    max-width: 600px;
+    margin: auto;
+}
+
+.waste-section ul li {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}

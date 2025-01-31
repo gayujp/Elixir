@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.upload-section, .gallery-section {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+#uploadForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#photoInput {
+    flex: 1;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.gallery div {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #ddd;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .gallery div {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery div {
+        flex: 1 1 100%;
+    }
+}
